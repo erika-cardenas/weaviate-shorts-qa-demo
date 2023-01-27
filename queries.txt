@@ -1,0 +1,23 @@
+COUNT NUMBER OF QA PAIRS
+
+{
+  Aggregate {
+    WeaviateShorts {meta{count}}
+  }
+}
+
+Free sandbox question 
+{
+  Get{
+    WeaviateShorts (
+      ask: {
+        question: "How long is the weaviate sandbox available for?",
+        properties: ["answer"],
+      },
+      limit: 1
+    ) {
+      answer
+    }
+  }
+}
+
