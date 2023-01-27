@@ -1,0 +1,2 @@
+# weaviate-shorts-qa-demo
+ 
