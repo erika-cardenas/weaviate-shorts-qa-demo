@@ -14,7 +14,7 @@ class_obj = {
             "description": "Questions from the document",
         },
         {
-            "name": "answer",
+            "name": "content",
             "dataType": ["string"],
             "description": "Answers to the questions",
         }

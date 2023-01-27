@@ -10,7 +10,7 @@ with open('data.json', 'r') as f:
 for shorts in data["WeaviateShorts"]:
   properties = {
     "question": shorts["question"],
-    "answer": shorts["answer"]
+    "content": shorts["content"]
   }
   client.data_object.create(
     data_object=properties,

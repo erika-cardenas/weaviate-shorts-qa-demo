@@ -12,12 +12,20 @@ Free sandbox question
     WeaviateShorts (
       ask: {
         question: "How long is the weaviate sandbox available for?",
-        properties: ["answer"],
+        properties: ["content"],
       },
       limit: 1
     ) {
-      answer
+      _additional {
+        answer {
+          certainty
+          hasAnswer
+          result
+        }
+      }
+      content
     }
   }
 }
+
 
